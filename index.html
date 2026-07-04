@@ -1,263 +1,115 @@
-<!DOCTYPE html>
-<html lang="en">
+<!Doctype html>
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Negin Mohammadshahi | AI Engineer</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Inter',sans-serif;
-}
-
-body{
-    background:#f5f7fb;
-    color:#0f172a;
-}
-
-/* NAV */
-nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 60px;
-    background:white;
-    position:sticky;
-    top:0;
-    border-bottom:1px solid #eee;
-}
-
-nav h2{
-    font-size:18px;
-}
-
-nav a{
-    margin-left:20px;
-    text-decoration:none;
-    color:#334155;
-    font-weight:500;
-}
-
-nav a:hover{
-    color:#2563eb;
-}
-
-/* HERO */
-.hero{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:60px;
-    max-width:1100px;
-    margin:auto;
-    gap:40px;
-}
-
-.hero-text h1{
-    font-size:42px;
-    margin-bottom:10px;
-}
-
-.hero-text p{
-    color:#475569;
-    margin-bottom:10px;
-}
-
-.badge{
-    display:inline-block;
-    background:#e0ecff;
-    color:#2563eb;
-    padding:6px 12px;
-    border-radius:20px;
-    font-size:12px;
-    margin-bottom:15px;
-}
-
-/* IMAGE FIX */
-.hero img{
-    width:280px;
-    height:320px;
-    object-fit:cover;
-    object-position:center top; /* 👈 مشکل صورت حل شد */
-    border-radius:20px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.15);
-}
-
-/* SECTIONS */
-section{
-    max-width:1100px;
-    margin:40px auto;
-    background:white;
-    padding:30px;
-    border-radius:16px;
-    box-shadow:0 6px 20px rgba(0,0,0,0.05);
-}
-
-h2{
-    margin-bottom:20px;
-    font-size:20px;
-    border-left:4px solid #2563eb;
-    padding-left:10px;
-}
-
-/* SKILLS */
-.skills span{
-    display:inline-block;
-    background:#eef2ff;
-    color:#1e3a8a;
-    padding:6px 12px;
-    border-radius:20px;
-    margin:5px;
-    font-size:13px;
-}
-
-/* PROJECTS */
-.project{
-    margin-bottom:20px;
-    padding:15px;
-    border:1px solid #eee;
-    border-radius:12px;
-}
-
-.project b{
-    font-size:16px;
-}
-
-.project p{
-    color:#64748b;
-    margin:5px 0;
-}
-
-a{
-    color:#2563eb;
-    text-decoration:none;
-}
-
-footer{
-    text-align:center;
-    padding:30px;
-    color:#64748b;
-    font-size:13px;
-}
-
-@media(max-width:900px){
-    .hero{
-        flex-direction:column;
-        text-align:center;
-    }
-
-    nav{
-        flex-direction:column;
-        gap:10px;
-    }
-}
-</style>
-
+    <title> Negin Mohammadshahi </title>
+    <style>  
+    
+    *{ Margin: 0; padding:0; box-sizing: border-box; }
+         body   { font-family: Arial; background: #f4f6f9; color: #333; ; }
+         .header { background: #2c3e50 ; color: white; padding: 25px 40px; text-align: center; }
+         .header h1 { font-size: 36px; }
+         .header p { color: #bdc3c7; margin-top: 8px; }
+         .container { max-width: 850px; margin: 15px auto; padding: 0 20px; }
+         .section {background: white; padding: 15px 20px; margin-bottom: 8px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,08); }
+         h2 { color: #2980b9; margin-bottom: 7px; font-size: 20px; border-bottom: 2px solid #eaf4fb; padding-bottom: 8px; }
+         .skill{ background: #eaf4fb; color: #00090e; padding: 5px; margin: 4px; display:inline-block; border-radius: 20px; font-size :14px; }
+         .job { margin-bottom: 40px; line-height: 1.8; }
+         .job b { color : #2c3e50; font-size: 16px; }
+         .job span { color : #888; font-size: 13px; } 
+         </style> 
+        
 </head>
-
 <body>
-
-<nav>
-<h2>Negin Mohammadshahi</h2>
-<div>
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
-</div>
-</nav>
-
-<div class="hero">
-
-<div class="hero-text">
-<div class="badge">AI & Software Engineer</div>
-<h1>Negin Mohammadshahi</h1>
-
-<p>
-AI Engineer with MSc in Artificial Intelligence & Robotics.
-Focused on Computer Vision, Machine Learning and NLP.
-</p>
-
-<p>
-📧 mohammadshahi.negin@gmail.com <br>
-📍 Fars, Iran
-</p>
-
-<p>
-<a href="https://linkedin.com">LinkedIn</a> |
-<a href="https://github.com/negin-mohammadshahi">GitHub</a>
-</p>
-</div>
-
-<img src="photo.jpg.jpg">
-
-</div>
-
-<section id="about">
-<h2>About Me</h2>
-<p>
-AI & Software Engineer with strong interest in Machine Learning, Computer Vision and intelligent systems. I build real-world AI applications and research-based projects.
-</p>
-</section>
-
-<section>
+<div class=" header" Style="display:flex; align-items:center; justify-content:space-between; padding:40px;">
+    <div style="text-align: left; ">
+        <h1>Negin Mohammadshahi</h1>
+        <p style="color:#bdc3c7; margin-top:8px;">AI & Software Engineer</p>
+        <p style="color:#bdc3c7; margin-top:5px;">mohammadshahi.negin@gmail.com / Fars Iran</p>
+        <p style="margin-top: 10px;">
+            <a href="https://www.linkedin.com/in/negin-mohammadshahi-908b3a79" style="color:white;">linkedin</a> / 
+            <a href="https://github.com/negin-mohammadshahi" style="color:white;">Github</a>
+        </p>  
+    </div>
+    <img src="photo.jpg.jpg" style="width:130px; height:130px; border-radius:50%; border:3px solid white; object-fit:cover; object-position: center  10%;">
+    </div>
+<div class="container">
+    
+</div class="section">
 <h2>Education</h2>
-<p><b>MSc AI & Robotics</b> — University of Isfahan (2021–2025)</p>
-<p>Thesis: Image Coding Based on DNA</p>
+<div class="job">
+    <b>Master's - Artificial Intelligence & Robotics</b><br>
+    <span>University of Isfahan / 2021 - 2025</span><br>
+    Thesis: Image Coding Based On DNA<br><br>
+    <b>Bachelor- Software Engineer</b><br>
+    <span>University of Isfahan / 2017 - 2021</span><br>
+    Thesis: Beauty Accounting
+</div>
+</div>
+<div class=""section>
+   <h2>Skills</h2>
+    <span class="skill">Python</span>
+    <span class="skill">HTML/CSS</span>
+    <span class="skill">JavaScript</span>
+    <span class="skill">TensorFlow</span>
+    <span class="skill">PyTorch</span>
+    <span class="skill">SQL</span>
+    <span class="skill">AI APIs</span>
+    <span class="skill">C#</span>
+    <span class="skill">OpenCV</span>
+<div>
 <br>
-<p><b>BSc Software Engineering</b> — University of Isfahan (2017–2021)</p>
-</section>
-
-<section id="skills">
-<h2>Skills</h2>
-<div class="skills">
-<span>Python</span>
-<span>Machine Learning</span>
-<span>Deep Learning</span>
-<span>TensorFlow</span>
-<span>PyTorch</span>
-<span>OpenCV</span>
-<span>SQL</span>
-<span>HTML</span>
-<span>CSS</span>
-<span>JavaScript</span>
-<span>Git</span>
-<span>AI Agents</span>
-<span>C#</span>
+</div class="sectin">
+    <h2>Languages</h2>
+    <span class="skill">Persian — Native</span>
+    <span class="skill">German — Very Good</span>
+    <span class="skill">English — Very Good</span>
+    <span class="skill">French — Good</span>
+    <span class="skill">Russian — Good</span>
 </div>
-</section>
-
-<section id="projects">
-<h2>Projects</h2>
-
-<div class="project">
-<b>Face Detection System</b>
-<p>Real-time face detection using OpenCV and Haar Cascades.</p>
-<a href="https://github.com/negin-mohammadshahi/face-detection">GitHub</a>
+<br>
+</div class="section">
+    <h2>Experience</h2>
+    <div class="job">
+    <b>Software Developer</b>
+    <span>2023 - present</span><br>
+    Python · C# · AI Development
 </div>
-
-<div class="project">
-<b>AI Chatbot</b>
-<p>Python AI assistant for debugging and explanation.</p>
-<a href="#">GitHub</a>
+<div class="job">
+    <b>Software Development Intern</b> — Tavan Pardazesh Negar<br>
+    <span>2022 - 2023</span><br>
+    HTML · CSS · JavaScript · Python
+    </div>
 </div>
-
-<div class="project">
-<b>Sentiment Analysis</b>
-<p>ML model for IMDB sentiment classification.</p>
-<a href="#">GitHub</a>
+<br>
+<div class="section">
+    <h2>Projects</h2>
+    <div class="job">
+        <b>AI Chatbot — Python Debug Assistant</b><br>
+        <span>2026</span><br>
+        A specialized AI chatbot that helps debug and explain Python code, with conversation memory and a secure Cloudflare Worker proxy to protect API credentials.<br>
+        <a href="https://negin-mohammadshahi.github.io/my-chatbot/" style="color:#2980b9;">Live Demo</a> /
+        <a href="https://github.com/negin-mohammadshahi/my-chatbot" style="color:#2980b9;">Source Code</a>
+    </div>
+    <div class="job">
+        <b>Sentiment Analysis</b><br>
+        <span>2026</span><br>
+        A machine learning project that classifies movie reviews as positive or negative, built with a TF-IDF + Logistic Regression pipeline trained on the IMDB dataset (~82% accuracy).<br>
+        <a href="https://github.com/negin-mohammadshahi/sentiment-analysis" style="color:#2980b9;">Source Code</a>
+    </div>
+    <div class="job">
+        <b>Real-Time Face Detection</b><br>
+        <span>2026</span><br>
+        A Python + OpenCV application that detects and tracks faces from a webcam feed in real time, assigns persistent labels to each detected face, and supports saving snapshots.<br>
+        <a href="https://github.com/negin-mohammadshahi/face-detection" style="color:#2980b9;">Source Code</a>
+    </div>
+    <div class="job">
+        <b>Currency Converter</b><br>
+        <span>2026</span><br>
+        A real-time currency converter web app with live exchange rates, auto-conversion, currency swap, and saved user preferences.<br>
+        <a href="https://negin-mohammadshahi.github.io/currency-converter/" style="color:#2980b9;">Live Demo</a> /
+        <a href="https://github.com/negin-mohammadshahi/currency-converter" style="color:#2980b9;">Source Code</a>
+    </div>
 </div>
-
-</section>
-
-<footer>
-© 2026 Negin Mohammadshahi
-</footer>
-
+</div>
 </body>
 </html>
