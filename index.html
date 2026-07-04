@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Negin Mohammadshahi | Portfolio</title>
+<title>Negin Mohammadshahi | AI Engineer</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 *{
@@ -17,21 +17,35 @@
 }
 
 body{
-    background:#f6f7fb;
-    color:#111;
-    line-height:1.6;
+    background:#f5f7fb;
+    color:#0f172a;
 }
 
-/* HEADER */
-header{
-    background:#0f172a;
-    color:white;
-    padding:60px 20px;
+/* NAV */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:white;
+    position:sticky;
+    top:0;
+    border-bottom:1px solid #eee;
 }
 
-.container{
-    max-width:1000px;
-    margin:auto;
+nav h2{
+    font-size:18px;
+}
+
+nav a{
+    margin-left:20px;
+    text-decoration:none;
+    color:#334155;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:#2563eb;
 }
 
 /* HERO */
@@ -39,65 +53,76 @@ header{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    flex-wrap:wrap;
-    gap:30px;
+    padding:60px;
+    max-width:1100px;
+    margin:auto;
+    gap:40px;
 }
 
-.hero h1{
-    font-size:40px;
+.hero-text h1{
+    font-size:42px;
+    margin-bottom:10px;
 }
 
-.hero p{
-    color:#cbd5e1;
-    margin-top:8px;
+.hero-text p{
+    color:#475569;
+    margin-bottom:10px;
 }
 
+.badge{
+    display:inline-block;
+    background:#e0ecff;
+    color:#2563eb;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:12px;
+    margin-bottom:15px;
+}
+
+/* IMAGE FIX */
 .hero img{
-    width:140px;
-    height:140px;
-    border-radius:50%;
+    width:280px;
+    height:320px;
     object-fit:cover;
-    border:3px solid white;
-}
-
-/* LINKS */
-a{
-    color:#60a5fa;
-    text-decoration:none;
-}
-a:hover{
-    text-decoration:underline;
+    object-position:center top; /* 👈 مشکل صورت حل شد */
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
 }
 
 /* SECTIONS */
 section{
+    max-width:1100px;
+    margin:40px auto;
     background:white;
-    margin:20px 0;
-    padding:25px;
-    border-radius:12px;
-    box-shadow:0 4px 12px rgba(0,0,0,0.06);
+    padding:30px;
+    border-radius:16px;
+    box-shadow:0 6px 20px rgba(0,0,0,0.05);
 }
 
 h2{
-    margin-bottom:15px;
+    margin-bottom:20px;
     font-size:20px;
-    border-left:4px solid #3b82f6;
+    border-left:4px solid #2563eb;
     padding-left:10px;
 }
 
 /* SKILLS */
-.skill{
+.skills span{
     display:inline-block;
     background:#eef2ff;
+    color:#1e3a8a;
     padding:6px 12px;
-    margin:5px;
     border-radius:20px;
+    margin:5px;
     font-size:13px;
 }
 
-/* PROJECT */
+/* PROJECTS */
 .project{
-    margin-bottom:18px;
+    margin-bottom:20px;
+    padding:15px;
+    border:1px solid #eee;
+    border-radius:12px;
 }
 
 .project b{
@@ -105,15 +130,32 @@ h2{
 }
 
 .project p{
-    color:#555;
+    color:#64748b;
     margin:5px 0;
+}
+
+a{
+    color:#2563eb;
+    text-decoration:none;
 }
 
 footer{
     text-align:center;
-    padding:20px;
-    color:#666;
+    padding:30px;
+    color:#64748b;
     font-size:13px;
+}
+
+@media(max-width:900px){
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    nav{
+        flex-direction:column;
+        gap:10px;
+    }
 }
 </style>
 
@@ -121,19 +163,33 @@ footer{
 
 <body>
 
-<header>
-<div class="container hero">
-
+<nav>
+<h2>Negin Mohammadshahi</h2>
 <div>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+</div>
+</nav>
+
+<div class="hero">
+
+<div class="hero-text">
+<div class="badge">AI & Software Engineer</div>
 <h1>Negin Mohammadshahi</h1>
-<p>AI & Software Engineer</p>
+
 <p>
-<a href="mailto:mohammadshahi.negin@gmail.com">Email</a> |
-Fars, Iran
+AI Engineer with MSc in Artificial Intelligence & Robotics.
+Focused on Computer Vision, Machine Learning and NLP.
 </p>
 
 <p>
-<a href="https://www.linkedin.com/in/negin-mohammadshahi-908b3a79">LinkedIn</a> |
+📧 mohammadshahi.negin@gmail.com <br>
+📍 Fars, Iran
+</p>
+
+<p>
+<a href="https://linkedin.com">LinkedIn</a> |
 <a href="https://github.com/negin-mohammadshahi">GitHub</a>
 </p>
 </div>
@@ -141,103 +197,63 @@ Fars, Iran
 <img src="photo.jpg.jpg">
 
 </div>
-</header>
 
-<div class="container">
-
-<section>
+<section id="about">
 <h2>About Me</h2>
 <p>
-AI & Software Engineer with a Master's degree in Artificial Intelligence and Robotics. Passionate about Machine Learning, Computer Vision, NLP, and AI systems. I enjoy building intelligent real-world applications.
+AI & Software Engineer with strong interest in Machine Learning, Computer Vision and intelligent systems. I build real-world AI applications and research-based projects.
 </p>
 </section>
 
 <section>
 <h2>Education</h2>
-
-<p><b>Master's – AI & Robotics</b><br>University of Isfahan | 2021 - 2025</p>
+<p><b>MSc AI & Robotics</b> — University of Isfahan (2021–2025)</p>
 <p>Thesis: Image Coding Based on DNA</p>
-
 <br>
-
-<p><b>Bachelor's – Software Engineering</b><br>University of Isfahan | 2017 - 2021</p>
-<p>Thesis: Beauty Accounting System</p>
+<p><b>BSc Software Engineering</b> — University of Isfahan (2017–2021)</p>
 </section>
 
-<section>
+<section id="skills">
 <h2>Skills</h2>
-
-<span class="skill">Python</span>
-<span class="skill">Machine Learning</span>
-<span class="skill">Deep Learning</span>
-<span class="skill">TensorFlow</span>
-<span class="skill">PyTorch</span>
-<span class="skill">OpenCV</span>
-<span class="skill">SQL</span>
-<span class="skill">HTML</span>
-<span class="skill">CSS</span>
-<span class="skill">JavaScript</span>
-<span class="skill">Git</span>
-<span class="skill">GitHub</span>
-<span class="skill">AI Agents</span>
-<span class="skill">C#</span>
-
+<div class="skills">
+<span>Python</span>
+<span>Machine Learning</span>
+<span>Deep Learning</span>
+<span>TensorFlow</span>
+<span>PyTorch</span>
+<span>OpenCV</span>
+<span>SQL</span>
+<span>HTML</span>
+<span>CSS</span>
+<span>JavaScript</span>
+<span>Git</span>
+<span>AI Agents</span>
+<span>C#</span>
+</div>
 </section>
 
-<section>
-<h2>Languages</h2>
-
-<span class="skill">Persian</span>
-<span class="skill">English</span>
-<span class="skill">German</span>
-<span class="skill">French</span>
-<span class="skill">Russian</span>
-
-</section>
-
-<section>
-<h2>Experience</h2>
-
-<p><b>Software Developer</b><br>2023 - Present</p>
-<p>Developed AI and software systems using Python and C#.</p>
-
-<br>
-
-<p><b>Intern – Tavan Pardazesh Negar</b><br>2022 - 2023</p>
-<p>Worked on web and software development projects.</p>
-
-</section>
-
-<section>
+<section id="projects">
 <h2>Projects</h2>
 
 <div class="project">
-<b>AI Chatbot</b>
-<p>Python-based AI assistant for debugging code.</p>
-<a href="https://negin-mohammadshahi.github.io/my-chatbot/">Live Demo</a>
+<b>Face Detection System</b>
+<p>Real-time face detection using OpenCV and Haar Cascades.</p>
+<a href="https://github.com/negin-mohammadshahi/face-detection">GitHub</a>
 </div>
 
 <div class="project">
-<b>Face Detection System</b>
-<p>OpenCV-based real-time face detection using Haar Cascades.</p>
-<a href="https://github.com/negin-mohammadshahi/face-detection">Source Code</a>
+<b>AI Chatbot</b>
+<p>Python AI assistant for debugging and explanation.</p>
+<a href="#">GitHub</a>
 </div>
 
 <div class="project">
 <b>Sentiment Analysis</b>
-<p>ML model for classifying IMDB reviews.</p>
-<a href="https://github.com/negin-mohammadshahi/sentiment-analysis">Source Code</a>
-</div>
-
-<div class="project">
-<b>Currency Converter</b>
-<p>Real-time currency conversion web app.</p>
-<a href="https://negin-mohammadshahi.github.io/currency-converter/">Live Demo</a>
+<p>ML model for IMDB sentiment classification.</p>
+<a href="#">GitHub</a>
 </div>
 
 </section>
-
-</div>
 
 <footer>
 © 2026 Negin Mohammadshahi
